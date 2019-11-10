@@ -20,4 +20,8 @@ public class Module {
 	int getCredit() {
 		return credit;
 	}
+
+	public String toString() {
+		return String.format("Modole code: %10s| Credit: %10s", getCode(), getCredit());
+	}
 }

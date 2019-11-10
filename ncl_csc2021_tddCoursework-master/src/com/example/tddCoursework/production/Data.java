@@ -7,6 +7,10 @@ package com.example.tddCoursework.production;
  *			 with a person who's a student
  */
 
-public interface Data {
+public abstract interface Data {
 	String toString(); // must implement the to string method
+
+	// implements comparable class
+	// make an abstract class to get the class.
+
 }

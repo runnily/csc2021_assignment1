@@ -20,4 +20,8 @@ public class ModuleMark implements Data {
 	public int getMark() {
 		return mark;
 	}
+
+	public String toString() {
+		return String.format("Module: %10s| Mark: %10d", getModule(), getMark());
+	}
 }

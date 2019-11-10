@@ -24,6 +24,6 @@ public class CourseTitle implements Data {
 	}
 
 	public String toString() {
-		return String.format("Course Title: %s\n Date: %d", getTitle(), getDate());
+		return String.format("Course Title: %10s| Date: %10d", getTitle(), getDate());
 	}
 }

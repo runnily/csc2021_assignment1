@@ -19,6 +19,14 @@ public class PostalAddress implements Data {
 		this.country = country;
 	}
 
+	public PostalAddress() {
+		this.lineOne = "";
+		this.lineTwo = "";
+		this.city = "";
+		this.postCode = "";
+		this.country = "";
+	}
+
 	public void setLineOne(String lineOne) {
 		this.lineOne = lineOne;
 
@@ -67,6 +75,17 @@ public class PostalAddress implements Data {
 	public String getCountry() {
 		return country;
 
+	}
+
+	public String toString() {
+		String displayTest = "Address\n";
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "Sort Type", "No. of comparisons");
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "Line one", getLineOne());
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "Line Two", getLineTwo());
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "City", getCity());
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "Post code", getPostCode());
+		displayTest += String.format("|%1$-20s|%2$-20s|\n", "Country", getCountry());
+		return displayTest;
 	}
 
 }
